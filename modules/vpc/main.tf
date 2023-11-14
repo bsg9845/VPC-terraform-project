@@ -43,6 +43,10 @@ resource "aws_route_table" "myRT" {
     gateway_id = aws_internet_gateway.igw.id
   }
 
+  tags = {
+    name = "MyRouteTable"
+  }
+}
 
 #RoutetableAssociation
 
